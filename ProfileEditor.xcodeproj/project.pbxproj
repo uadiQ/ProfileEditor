@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		1C57598B1F9E910100197302 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C57598A1F9E910100197302 /* AppDelegate.swift */; };
-		1C57598D1F9E910100197302 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C57598C1F9E910100197302 /* ViewController.swift */; };
 		1C5759901F9E910100197302 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C57598E1F9E910100197302 /* Main.storyboard */; };
 		1C5759921F9E910100197302 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C5759911F9E910100197302 /* Assets.xcassets */; };
 		1C5759951F9E910100197302 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C5759931F9E910100197302 /* LaunchScreen.storyboard */; };
+		1C57599D1F9E923B00197302 /* ProfileInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C57599C1F9E923B00197302 /* ProfileInfoViewController.swift */; };
+		1C57599F1F9E935B00197302 /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C57599E1F9E935B00197302 /* ProfileEditViewController.swift */; };
+		1C5759A11F9E95EC00197302 /* EditProfileDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5759A01F9E95EC00197302 /* EditProfileDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1C5759871F9E910100197302 /* ProfileEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProfileEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C57598A1F9E910100197302 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1C57598C1F9E910100197302 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1C57598F1F9E910100197302 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1C5759911F9E910100197302 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C5759941F9E910100197302 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C5759961F9E910100197302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C57599C1F9E923B00197302 /* ProfileInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoViewController.swift; sourceTree = "<group>"; };
+		1C57599E1F9E935B00197302 /* ProfileEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
+		1C5759A01F9E95EC00197302 /* EditProfileDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				1C57598A1F9E910100197302 /* AppDelegate.swift */,
-				1C57598C1F9E910100197302 /* ViewController.swift */,
+				1C57599C1F9E923B00197302 /* ProfileInfoViewController.swift */,
+				1C57599E1F9E935B00197302 /* ProfileEditViewController.swift */,
+				1C5759A01F9E95EC00197302 /* EditProfileDelegate.swift */,
 				1C57598E1F9E910100197302 /* Main.storyboard */,
 				1C5759911F9E910100197302 /* Assets.xcassets */,
 				1C5759931F9E910100197302 /* LaunchScreen.storyboard */,
@@ -136,7 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C57598D1F9E910100197302 /* ViewController.swift in Sources */,
+				1C57599D1F9E923B00197302 /* ProfileInfoViewController.swift in Sources */,
+				1C57599F1F9E935B00197302 /* ProfileEditViewController.swift in Sources */,
+				1C5759A11F9E95EC00197302 /* EditProfileDelegate.swift in Sources */,
 				1C57598B1F9E910100197302 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
