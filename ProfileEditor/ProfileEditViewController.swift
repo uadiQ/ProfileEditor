@@ -16,20 +16,17 @@ class ProfileEditViewController: UIViewController {
     @IBOutlet private weak var fiftyYearsSwitcher: UISwitch!
     
     var delegate: EditProfileDelegate?
-    var trasnferedName: String?
-    var trasnferedSurname: String?
+    var transferedName: String?
+    var transferedSurname: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         nameField.delegate = self
         surnameField.delegate = self
+        nameField.text = transferedName
+        surnameField.text = transferedSurname
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        nameField.text = trasnferedName
-        surnameField.text = trasnferedSurname
-    }
     
     private func clearTextFields()
     {
@@ -55,6 +52,8 @@ class ProfileEditViewController: UIViewController {
         view.endEditing(true)
     }
     
+    
+    
     @IBAction private func resetButtonPressed(_ sender: UIButton) {
         fiftyYearsSwitcher.isOn = false
         clearTextFields()
@@ -65,5 +64,9 @@ class ProfileEditViewController: UIViewController {
 
 extension ProfileEditViewController: UITextFieldDelegate
 {
-
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        view.endEditing(true)
+        return true
+    }
 }
+

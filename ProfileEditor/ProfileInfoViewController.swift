@@ -22,8 +22,8 @@ class ProfileInfoViewController: UIViewController {
         if segue.identifier == "showEditScreen", let destVC = segue.destination as? ProfileEditViewController
         {
             destVC.delegate = self
-            destVC.trasnferedName = nameLabel.text
-            destVC.trasnferedSurname = surnameLabel.text
+            destVC.transferedName = nameLabel.text
+            destVC.transferedSurname = surnameLabel.text
         }
     }
 
